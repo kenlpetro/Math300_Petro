@@ -10,7 +10,7 @@ elseif a<0
 elseif a==0
     disp('The sum of the elements of A is 0!')
 end
-%% 
+%% print 10 b's
 clc;
 N=10;
 for b=1:N
@@ -26,11 +26,11 @@ for i=1:length(c)
 end
 disp(j);
 
-%%
+%% random # 1:1000
 clc;
 d=randi([1,1000]);
 disp(d);
-%%
+%% random # 500:600
 clc;
 e=0;
 while e<500 || e>600
