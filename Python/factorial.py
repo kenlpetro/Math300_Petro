@@ -1,12 +1,14 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jul 15 11:16:02 2022
+import math
+import matplotlib.pyplot as plt
 
-@author: rocko
-"""
-
-def fact (N,x):
-    n=0
-    for i in range(0,N+1):
+def fact (N,x=[]):
+    
+    x_totals=[]
+    for i in range(len(x)):
+        total=0
+        for n in range(N+1):
+            total+=((-1)**N)*(x[i]**(2*n))/(math.factorial(2*n))
         
-        return ((-1**N)*(x**(2*n)))/(2*n)!
+        x_totals.append(total)
+        return x_totals
+    plt.plot(x,x_totals)    
