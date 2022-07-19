@@ -18,7 +18,7 @@ display(newexpr.subs(u,2))
 display(newexpr.subs(u,2).factor())
 '''
 
-"""
+'''
 expr=1/((x+1)*(x-3))
 display(expr.apart())
 display(expr.together())
@@ -27,4 +27,4 @@ display(sp.integrate(1/x,(x,1,3)))
 display(sp.integrate(1/x,(x,1,sp.oo)))
 display(sp.solve(x**2+1))
 display(sp.solve((a*x**2+b*x+c),x))
-"""
+'''
